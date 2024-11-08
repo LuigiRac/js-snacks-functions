@@ -4,9 +4,31 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function firstLetter(params) {
+function firstLetter() {
+    // console.log(names.length);
+    const newArray = [];
+    const letterArray = ["A"]
+
+    for (let i = 0; i < names.length; i++) {
+
+
+        let filterLetter = letterArray[0];
+        let pLetter = names[i].charAt(0);
+        // newArray.push(fLetter)
+        if (pLetter === filterLetter) {
+            newArray.push(names[i]);
+
+        }
+
+        // console.log(fLetter);
+    }
+
+    return newArray;
 
 }
+
+console.log(firstLetter());
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
